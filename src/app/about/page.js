@@ -11,7 +11,6 @@ export const metadata = {
 export default function About() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-6">
-      {/* <Animation /> */}
       <header className="text-center mb-8">
         <Animation>
           <h1 className="text-4xl text-custom-pink font-bold mb-4">

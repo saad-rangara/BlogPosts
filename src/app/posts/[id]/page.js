@@ -1,5 +1,6 @@
 import { db } from "@/utils/dbConnection";
 import Link from "next/link";
+import Image from "next/image";
 import Animation from "@/components/Animation";
 
 export const metadata = (post) => ({
@@ -114,7 +115,7 @@ export default async function IdPost({ params, searchParams }) {
       {/* </header> */}
 
       <main className="max-w-3xl bg-custom-white rounded-custom shadow-custom p-6">
-        <img
+        <Image
           src={post.image}
           alt={post.title}
           className="w-full h-auto rounded-md mb-4"
