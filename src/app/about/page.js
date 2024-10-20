@@ -37,8 +37,8 @@ export default function About() {
           scoop.
         </p>
         <p className="text-gray-700 mb-4">
-          Whether youre a fan of classic vanilla&lsquo adventurous with flavors
-          like lavender and honey&lsquo or passionate about homemade ice cream,
+          Whether you&apos;re a fan of classic vanilla, adventurous with flavors
+          like lavender and honey&lsquo; or passionate about homemade ice cream,
           this blog is for you. Join us as we dive into the world of frozen
           delights, share our favorite recipes, and explore the fascinating
           history behind this beloved dessert.
