@@ -37,15 +37,15 @@ export default function About() {
           scoop.
         </p>
         <p className="text-gray-700 mb-4">
-          Whether you&apos;re a fan of classic vanilla&lsquo adventurous with
-          flavors like lavender and honey&lsquo or passionate about homemade ice
-          cream, this blog is for you. Join us as we dive into the world of
-          frozen delights, share our favorite recipes, and explore the
-          fascinating history behind this beloved dessert.
+          Whether youre a fan of classic vanilla&lsquo adventurous with flavors
+          like lavender and honey&lsquo or passionate about homemade ice cream,
+          this blog is for you. Join us as we dive into the world of frozen
+          delights, share our favorite recipes, and explore the fascinating
+          history behind this beloved dessert.
         </p>
         <p className="text-gray-700 mb-4">
-          We believe that ice cream is more than just a treat; it&apos;s a way
-          to create memories with friends and family, celebrate special moments,
+          We believe that ice cream is more than just a treat; its a way to
+          create memories with friends and family, celebrate special moments,
           and enjoy the simple pleasures of life. We hope to inspire you to
           scoop up some joy and indulge in your favorite flavors!
         </p>
