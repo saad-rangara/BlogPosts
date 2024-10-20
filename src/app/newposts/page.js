@@ -62,7 +62,7 @@ export default function NewPost() {
       </Animation>
       <main className="max-w-xl bg-custom-white rounded-custom shadow-custom p-6">
         <h2 className="text-2xl text-gray-600 font-semibold mb-4">
-          We'd love if you create a post!
+          We&aposd love if you create a post!
         </h2>
         <form action={handleSubmit} className="flex flex-col gap-4">
           <div>
