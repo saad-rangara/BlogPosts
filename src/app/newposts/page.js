@@ -4,6 +4,7 @@ import { db } from "@/utils/dbConnection";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import Link from "next/link";
+import Animation from "@/components/Animation";
 
 export default function NewPost() {
   async function handleSubmit(formValues) {
@@ -53,8 +54,12 @@ export default function NewPost() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-6">
-      <h1 className="text-4xl text-custom-pink font-bold mb-4">Add New Post</h1>
+    <main className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-6">
+      <Animation>
+        <h1 className="text-4xl text-custom-pink font-bold mb-4">
+          Add New Post
+        </h1>
+      </Animation>
       <main className="max-w-xl bg-custom-white rounded-custom shadow-custom p-6">
         <h2 className="text-2xl text-gray-600 font-semibold mb-4">
           We'd love if you create a post!
@@ -137,6 +142,6 @@ export default function NewPost() {
           Return to Home
         </Link>
       </p>
-    </div>
+    </main>
   );
 }

@@ -1,13 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
+import Animation from "@/components/Animation";
+
+export const metadata = {
+  title: "About Ice Creams Scoop",
+  description:
+    "Discover the sweet story behind Ice Cream Scoop, your ultimate destination for delicious ice cream flavors and delightful treats. Learn about our passion for quality ingredients, our commitment to sustainability, and our mission to create memorable experiences for ice cream lovers of all ages. Join us on a journey of flavor and fun!",
+};
 
 export default function About() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-6">
+    <main className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-6">
+      {/* <Animation /> */}
       <header className="text-center mb-8">
-        <h1 className="text-4xl text-custom-pink font-bold mb-4">
-          About The Ice Cream Scoop
-        </h1>
+        <Animation>
+          <h1 className="text-4xl text-custom-pink font-bold mb-4">
+            About The Ice Cream Scoop
+          </h1>
+        </Animation>
         <Image
           src="/fallon.jpg"
           alt="Ice Cream Blog Banner"
@@ -46,6 +56,6 @@ export default function About() {
           Return to Home
         </Link>
       </footer>
-    </div>
+    </main>
   );
 }

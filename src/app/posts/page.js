@@ -1,5 +1,12 @@
 import { db } from "@/utils/dbConnection";
 import Link from "next/link";
+import Animation from "@/components/Animation";
+
+export const metadata = {
+  title: "Ice Cream Scoop Blog",
+  description:
+    "Dive into the delicious world of Ice Cream Scoop with our blog! Discover the latest flavor innovations, seasonal recipes, and behind-the-scenes stories from our ice cream artisans. Whether you're looking for tips on making the perfect sundae or insights into the ice cream industry, our posts are packed with inspiration and sweet treats. Join the conversation and satisfy your cravings!",
+};
 
 export default async function Posts({ searchParams }) {
   let posts = [];
@@ -17,11 +24,13 @@ export default async function Posts({ searchParams }) {
   }
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-6">
+    <main className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-6">
       {/* <h1 className="text-4xl text-center font-bold mb-4"></h1> */}
-      <h2 className="text-4xl text-custom-pink text-center font-bold mb-8">
-        Ice-Creams Posts
-      </h2>
+      <Animation>
+        <h1 className="text-4xl text-custom-pink text-center font-bold mb-8">
+          Ice-Creams Posts
+        </h1>
+      </Animation>
       <div className="mb-6">
         <label
           htmlFor="sortOrder"
@@ -74,6 +83,6 @@ export default async function Posts({ searchParams }) {
           Return to Home
         </Link>
       </footer>
-    </div>
+    </main>
   );
 }

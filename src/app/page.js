@@ -1,18 +1,29 @@
 // import Image from "next/image";
 import "@fontsource/pacifico";
 import Image from "next/image";
+import Animation from "@/components/Animation";
+
+export const metadata = {
+  title: "Welcome to Ice Cream Scoop",
+  description:
+    "Indulge in a world of delightful flavors at Ice Cream Scoop! Explore our wide selection of creamy ice creams, unique toppings, and seasonal specials. Whether you're craving a classic cone or a trendy sundae, we have something to satisfy every sweet tooth. Join us for a scoop of happiness today!",
+};
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-6">
-      <section className="text-center mb-10">
-        <h2 className="text-2xl font-bold text-custom-pink">
-          Welcome to The Ice Cream Scoop
-        </h2>
-        <p className="text-lg text-gray-600 mb-5">
-          Your go-to blog for everything ice-cream! Discover new flavors,
-          recipes, and tips for your next ice cream adventure!
-        </p>
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-6">
+      <section className="text-center mb-1">
+        <Animation>
+          <h1 className="text-2xl mb-2 font-bold text-custom-pink">
+            Welcome to The Ice Cream Scoop
+          </h1>
+        </Animation>
+        <main className="bg-white rounded-lg shadow-lg p-6">
+          <p className="text-lg text-gray-600 mb-5">
+            Your go-to blog for everything ice-cream! Discover new flavors,
+            recipes, and tips for your next ice cream adventure!
+          </p>
+        </main>
       </section>
 
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -107,6 +118,6 @@ export default function Home() {
           </Link>
         </div> */}
       </section>
-    </main>
+    </div>
   );
 }

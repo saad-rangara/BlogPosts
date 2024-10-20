@@ -1,5 +1,11 @@
 import { db } from "@/utils/dbConnection";
 import Link from "next/link";
+import Animation from "@/components/Animation";
+
+export const metadata = (post) => ({
+  title: `${post.title} - Ice Cream Scoop`,
+  description: `Explore the delightful details of "${post.title}" at Ice Cream Scoop! Discover the ingredients, flavor notes, and inspiration behind this delicious creation. Join us in celebrating the joy of ice cream with every scoop!`,
+});
 
 export default async function IdPost({ params, searchParams }) {
   const { id } = params;
@@ -98,12 +104,14 @@ export default async function IdPost({ params, searchParams }) {
   );
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-6">
-      <header className="text-center mb-8">
+    <main className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-6">
+      <Animation>
+        {/* <header className="text-center mb-8"> */}
         <h1 className="text-4xl text-custom-pink font-bold mb-4">
           {post.title}
-        </h1>{" "}
-      </header>
+        </h1>
+      </Animation>
+      {/* </header> */}
 
       <main className="max-w-3xl bg-custom-white rounded-custom shadow-custom p-6">
         <img
@@ -172,6 +180,6 @@ export default async function IdPost({ params, searchParams }) {
           Back to Posts
         </Link>
       </footer>
-    </div>
+    </main>
   );
 }
