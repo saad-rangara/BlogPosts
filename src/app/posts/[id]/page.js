@@ -118,6 +118,8 @@ export default async function IdPost({ params, searchParams }) {
         <Image
           src={post.image}
           alt={post.title}
+          width={800}
+          height={400}
           className="w-full h-auto rounded-md mb-4"
         />
         <p className="text-gray-700">{post.content}</p>{" "}
