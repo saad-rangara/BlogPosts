@@ -10,7 +10,7 @@ export default function Animation (props) {
       transition={{ duration: 0.5 }}
       className="flex justify-center bg-gray-100"
     >
-      {prop.children}
+      {props.children}
     </motion.div>
   );
 };
